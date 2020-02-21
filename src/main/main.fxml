@@ -1,8 +1,50 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
 
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
+<?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.control.Button?>
+
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+
+
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+
+<VBox fx:controller="main.Controller" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <MenuBar fx:id="menuBar">
+            <menus>
+                <Menu text="File">
+                    <items>
+                        <MenuItem text="Save"/>
+                    </items>
+                </Menu>
+                <Menu text="Help">
+                    <items>
+                        <MenuItem text="About"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <ToolBar>
+            <items>
+                <Button text="Back 0"/>
+                <Button text="Back 1"/>
+                <Button text="Stop"/>
+                <Button text="Start"/>
+                <Button text="+ Scene"/>
+                <Button text="- Scene"/>
+            </items>
+        </ToolBar>
+        <TabPane>
+            <Tab text="Scenes"/>
+            <Tab text="Actors"/>
+        </TabPane>
+    </children>
+</VBox>
+
