@@ -17,14 +17,14 @@
                 </Menu>
                 <Menu text="Help">
                     <items>
-                        <MenuItem fx:id="menuItemAbout" text="About" onAction="#displayAboutDialog"/>
+                        <MenuItem fx:id="aboutMenuItem" text="About" onAction="#displayAboutDialog"/>
                     </items>
                 </Menu>
             </menus>
         </MenuBar>
-        <TabPane>
-            <Tab text="Scenes"/>
-            <Tab text="Actors"/>
+        <TabPane fx:id="editorTabPane">
+            <Tab fx:id="scenesTab" text="Scenes" disable="false" closable="false"/>
+            <Tab fx:id="actorsTab" text="Actors" disable="true" closable="false"/>
         </TabPane>
 
         <fx:include fx:id="scenes" source="../scenes/scenes.fxml"/>
