@@ -15,7 +15,12 @@ public class MainController {
 
     @FXML
     protected void displayAboutDialog(ActionEvent event) {
-
+       //System.out.println("About menu clicked");
+        Alert about = new Alert(Alert.AlertType.INFORMATION);
+        about.setTitle("Storytron 2.0");
+        about.setHeaderText("Version 2.0-a1");
+        about.setContentText("\"Omnes idea nulla superbia\"");
+        about.showAndWait();
     }
 
 }
