@@ -1,9 +1,11 @@
 package main;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 
+import javax.swing.*;
 
 
 public class MainController {
@@ -16,6 +18,11 @@ public class MainController {
         about.setHeaderText(null);
         about.setContentText("v2.0-alpha1\n\n\"Omnes idea nulla superbia\"\nAll ideas, no pride");
         about.showAndWait();
+    }
+
+    @FXML
+    protected void quitApplication() {
+        Platform.exit();
     }
 
 }

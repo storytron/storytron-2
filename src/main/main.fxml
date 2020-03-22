@@ -12,7 +12,7 @@
             <menus>
                 <Menu text="File">
                     <items>
-                        <MenuItem text="Quit"/>
+                        <MenuItem fx:id="quitMenuItem" text="Quit" onAction="#quitApplication"/>
                     </items>
                 </Menu>
                 <Menu text="Help">
