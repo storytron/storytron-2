@@ -1,6 +1,3 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
-
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.Menu?>
@@ -12,12 +9,9 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.Tab?>
 
-
-<?import javafx.scene.control.Label?>
-
-<VBox fx:controller="main.Controller" xmlns:fx="http://javafx.com/fxml">
+<VBox fx:controller="main.MainController" xmlns:fx="http://javafx.com/fxml">
     <children>
-        <MenuBar fx:id="menuBar">
+        <MenuBar>
             <menus>
                 <Menu text="File">
                     <items>
@@ -26,7 +20,7 @@
                 </Menu>
                 <Menu text="Help">
                     <items>
-                        <MenuItem text="About"/>
+                        <MenuItem fx:id="menuItemAbout" text="About" onAction="#displayAboutDialog"/>
                     </items>
                 </Menu>
             </menus>
