@@ -3,12 +3,25 @@
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="scenes.ScenesController"
             prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+    <top>
+        <ToolBar>
+            <items>
+                <Button text="Back 0"/>
+                <Button text="Back 1"/>
+                <Button text="Stop"/>
+                <Button text="Start"/>
+                <Button text="+ Scene"/>
+                <Button text="- Scene"/>
+            </items>
+        </ToolBar>
+    </top>
+</BorderPane>
