@@ -22,7 +22,6 @@
     <top>
         <ToolBar>
             <items>
-                <Button text="Rewind"/>
                 <Button text="Start"/>
                 <Separator/>
                 <Button text="+ Scene"/>
