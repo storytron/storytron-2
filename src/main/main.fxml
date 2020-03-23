@@ -6,12 +6,16 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.Tab?>
 
+<?import javafx.scene.control.SeparatorMenuItem?>
 <VBox fx:controller="main.MainController" xmlns:fx="http://javafx.com/fxml">
     <children>
         <MenuBar>
             <menus>
                 <Menu text="File">
                     <items>
+                        <MenuItem fx:id="openMenuItem" text="Open" onAction="#openFile"/>
+                        <MenuItem fx:id="saveMenuItem" text="Save" onAction="#saveFile"/>
+                        <SeparatorMenuItem/>
                         <MenuItem fx:id="quitMenuItem" text="Quit" onAction="#quitApplication"/>
                     </items>
                 </Menu>

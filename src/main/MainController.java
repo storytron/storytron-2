@@ -21,6 +21,16 @@ public class MainController {
     }
 
     @FXML
+    protected void openFile() {
+
+    }
+
+    @FXML
+    protected void saveFile() {
+
+    }
+
+    @FXML
     protected void quitApplication() {
         Platform.exit();
     }
