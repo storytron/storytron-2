@@ -22,10 +22,8 @@
     <top>
         <ToolBar>
             <items>
-                <Button text="Start"/>
-                <Separator/>
-                <Button text="+ Scene"/>
-                <Button text="- Scene"/>
+                <Button text="+ Scene" disable="true"/>
+                <Button text="- Scene" disable="true"/>
             </items>
         </ToolBar>
     </top>
