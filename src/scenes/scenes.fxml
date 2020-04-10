@@ -13,6 +13,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ComboBox?>
 
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Separator?>
@@ -34,13 +35,16 @@
     </left>
     <center>
         <ListView>
-            <HBox>
-                <ImageView fx:id="sceneIcon" fitHeight="65.0" fitWidth="65.0" />
-                <VBox>
-                    <TextField fx:id="sceneTitle" text="Scene 1" prefWidth="375.0" minWidth="375.0"/>
-                    <TextField fx:id="sceneDescription" promptText="Scene Description (optional)" minWidth="550.0"/>
-                </VBox>
-            </HBox>
+            <VBox>
+                <HBox>
+                    <ImageView fx:id="sceneIcon" fitHeight="65.0" fitWidth="65.0" />
+                    <VBox>
+                        <TextField fx:id="sceneTitle" text="Scene 1" prefWidth="375.0" minWidth="375.0"/>
+                        <TextField fx:id="sceneDescription" promptText="Scene Description (optional)" minWidth="550.0"/>
+                    </VBox>
+                </HBox>
+                <ComboBox/>
+            </VBox>
         </ListView>
     </center>
 </BorderPane>
