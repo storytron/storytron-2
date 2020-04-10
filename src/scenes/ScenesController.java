@@ -27,7 +27,6 @@ public class ScenesController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
-
         // Create image for scene editor icon
         URL imageUrl = this.getClass().getResource("/resources/audience.png");
         Image image = new Image(String.valueOf(imageUrl));

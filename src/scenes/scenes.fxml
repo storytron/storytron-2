@@ -33,12 +33,14 @@
         <ListView fx:id="sceneList" prefWidth="150.0"/>
     </left>
     <center>
-        <HBox>
-            <ImageView fx:id="sceneIcon" fitHeight="65.0" fitWidth="65.0" />
-            <VBox>
-                <TextField fx:id="sceneTitle" text="Scene 1" prefWidth="375.0" minWidth="375.0"/>
-                <TextField fx:id="sceneDescription" promptText="Scene Description (optional)" minWidth="550.0"/>
-            </VBox>
-        </HBox>
+        <ListView>
+            <HBox>
+                <ImageView fx:id="sceneIcon" fitHeight="65.0" fitWidth="65.0" />
+                <VBox>
+                    <TextField fx:id="sceneTitle" text="Scene 1" prefWidth="375.0" minWidth="375.0"/>
+                    <TextField fx:id="sceneDescription" promptText="Scene Description (optional)" minWidth="550.0"/>
+                </VBox>
+            </HBox>
+        </ListView>
     </center>
 </BorderPane>
