@@ -14,9 +14,9 @@ public class MainController {
     protected void displayAboutDialog(ActionEvent event) {
        //System.out.println("About menu clicked");
         Alert about = new Alert(Alert.AlertType.INFORMATION);
-        about.setTitle("Storytron 2.0");
+        about.setTitle("Storytron 2");
         about.setHeaderText(null);
-        about.setContentText("v2.0-alpha1\n\n\"Omnes idea nulla superbia\"\nAll ideas, no pride");
+        about.setContentText("v0.1-alpha1\n\n\"Omnes idea nulla superbia\"\nAll ideas, no pride");
         about.showAndWait();
     }
 
