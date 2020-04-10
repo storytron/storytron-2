@@ -33,9 +33,7 @@
     <center>
         <VBox>
             <HBox>
-                <TextField fx:id="sceneID" text="Scene ID" prefWidth="75.0" minWidth="75.0"/>
                 <TextField fx:id="sceneTitle" text="Scene Title" prefWidth="375.0" minWidth="375.0"/>
-                <TextField fx:id="sceneAuthor" text="Scene Author" prefWidth="150.0" minWidth="150.0"/>
             </HBox>
             <TextArea fx:id="sceneText" text="Scene Text" prefHeight="550.0" minWidth="550.0"/>
         </VBox>
