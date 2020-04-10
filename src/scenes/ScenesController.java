@@ -16,7 +16,7 @@ import java.util.ResourceBundle;
 
 public class ScenesController implements Initializable {
 
-    final ObservableList<String> sceneListItems = FXCollections.observableArrayList("Scene 1", "Scene 2", "Scene 3", "Scene 4", "Scene 5");
+    final ObservableList<String> sceneListItems = FXCollections.observableArrayList("Scene 1");
 
     @FXML
     private ListView<String> sceneList;
