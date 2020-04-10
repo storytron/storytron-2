@@ -10,6 +10,8 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.control.TextArea?>
 
 <?import javafx.scene.layout.VBox?>
@@ -31,9 +33,12 @@
         <ListView fx:id="sceneList" prefWidth="150.0"/>
     </left>
     <center>
-        <VBox>
-            <TextField fx:id="sceneTitle" text="Scene Title" prefWidth="375.0" minWidth="375.0"/>
-            <TextField fx:id="sceneDescription" text="Scene Description" prefHeight="550.0" minWidth="550.0"/>
-        </VBox>
+        <HBox>
+            <ImageView fx:id="sceneIcon" fitHeight="65.0" fitWidth="65.0" />
+            <VBox>
+                <TextField fx:id="sceneTitle" text="Scene Title" prefWidth="375.0" minWidth="375.0"/>
+                <TextField fx:id="sceneDescription" text="Scene Description" minWidth="550.0"/>
+            </VBox>
+        </HBox>
     </center>
 </BorderPane>
