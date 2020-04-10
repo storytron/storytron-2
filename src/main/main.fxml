@@ -27,11 +27,11 @@
             </menus>
         </MenuBar>
         <TabPane fx:id="editorTabPane">
+            <Tab fx:id="stagesEditor" text="Stages" disable="true" closable="false"/>
             <Tab fx:id="scenesEditor" text="Scenes" disable="false" closable="false"/>
             <Tab fx:id="actorsEditor" text="Actors" disable="true" closable="false"/>
-            <Tab fx:id="verbsEditor" text="Verbs" disable="true" closable="false"/>
             <Tab fx:id="propsEditor" text="Props" disable="true" closable="false"/>
-            <Tab fx:id="stagesEditor" text="Stages" disable="true" closable="false"/>
+            <Tab fx:id="verbsEditor" text="Verbs" disable="true" closable="false"/>
         </TabPane>
 
         <fx:include fx:id="scenes" source="../scenes/scenes.fxml"/>
