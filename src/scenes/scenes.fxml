@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ComboBox?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Separator?>
+
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.control.ListCell?>
+<?import javafx.geometry.Insets?>
+<?import javafx.collections.FXCollections?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="scenes.ScenesController"
+            prefHeight="488.0" prefWidth="600.0">
+    <top>
+        <ToolBar>
+            <items>
+                <Button text="+ Scene" disable="true"/>
+                <Button text="- Scene" disable="true"/>
+            </items>
+        </ToolBar>
+    </top>
+    <left>
+        <ListView fx:id="sceneList" prefWidth="150.0"/>
+    </left>
+    <center>
+        <HBox spacing="2">
+            <children>
+                <Button disable="true">
+                    <graphic>
+                        <ImageView fx:id="sceneIcon" fitHeight="45.0" fitWidth="45.0"/>
+                    </graphic>
+                </Button>
+                <VBox spacing="2">
+                    <TextField fx:id="sceneTitle" text="Scene 1" promptText="Scene Name (required)" prefWidth="375.0" minWidth="375.0" />
+                    <TextField fx:id="sceneDescription" promptText="Scene Description (optional)" minWidth="550.0"/>
+                    <ComboBox fx:id="sceneStage" prefWidth="150" promptText="Select Stage">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="Stage 1"/>
+                                <String fx:value="Stage 2"/>
+                                <String fx:value="Stage 3"/>
+                            </FXCollections>
+                        </items>
+                    </ComboBox>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+            </padding>
+        </HBox>
+    </center>
+</BorderPane>

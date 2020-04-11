@@ -1,26 +1,38 @@
 package main;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.stage.Window;
-import javafx.scene.control.MenuItem;
 import javafx.scene.control.Alert;
 
+import javax.swing.*;
 
 
 public class MainController {
 
     @FXML
-    private MenuItem menuItemAbout;
-
-    @FXML
     protected void displayAboutDialog(ActionEvent event) {
        //System.out.println("About menu clicked");
         Alert about = new Alert(Alert.AlertType.INFORMATION);
-        about.setTitle("Storytron 2.0");
-        about.setHeaderText("Version 2.0-a1");
-        about.setContentText("\"Omnes idea nulla superbia\"");
+        about.setTitle("Storytron 2");
+        about.setHeaderText(null);
+        about.setContentText("v0.1-alpha1\n\n\"Omnes idea nulla superbia\"\nAll ideas, no pride");
         about.showAndWait();
+    }
+
+    @FXML
+    protected void openFile() {
+
+    }
+
+    @FXML
+    protected void saveFile() {
+
+    }
+
+    @FXML
+    protected void quitApplication() {
+        Platform.exit();
     }
 
 }

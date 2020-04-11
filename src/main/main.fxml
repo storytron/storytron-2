@@ -3,42 +3,39 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuItem?>
 
-<?import javafx.scene.control.ToolBar?>
-<?import javafx.scene.control.Button?>
-
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.Tab?>
 
+<?import javafx.scene.control.SeparatorMenuItem?>
 <VBox fx:controller="main.MainController" xmlns:fx="http://javafx.com/fxml">
     <children>
         <MenuBar>
             <menus>
                 <Menu text="File">
                     <items>
-                        <MenuItem text="Save"/>
+                        <MenuItem fx:id="openMenuItem" text="Open" onAction="#openFile"/>
+                        <MenuItem fx:id="saveMenuItem" text="Save" onAction="#saveFile"/>
+                        <SeparatorMenuItem/>
+                        <MenuItem fx:id="quitMenuItem" text="Quit" onAction="#quitApplication"/>
                     </items>
                 </Menu>
                 <Menu text="Help">
                     <items>
-                        <MenuItem fx:id="menuItemAbout" text="About" onAction="#displayAboutDialog"/>
+                        <MenuItem fx:id="aboutMenuItem" text="About" onAction="#displayAboutDialog"/>
                     </items>
                 </Menu>
             </menus>
         </MenuBar>
-        <ToolBar>
-            <items>
-                <Button text="Back 0"/>
-                <Button text="Back 1"/>
-                <Button text="Stop"/>
-                <Button text="Start"/>
-                <Button text="+ Scene"/>
-                <Button text="- Scene"/>
-            </items>
-        </ToolBar>
-        <TabPane>
-            <Tab text="Scenes"/>
-            <Tab text="Actors"/>
+        <TabPane fx:id="editorTabPane">
+            <Tab fx:id="stagesEditor" text="Stages" disable="true" closable="false"/>
+            <Tab fx:id="scenesEditor" text="Scenes" disable="false" closable="false"/>
+            <Tab fx:id="actorsEditor" text="Actors" disable="true" closable="false"/>
+            <Tab fx:id="verbsEditor" text="Verbs" disable="true" closable="false"/>
+            <Tab fx:id="propsEditor" text="Props" disable="true" closable="false"/>
         </TabPane>
+
+        <fx:include fx:id="scenes" source="../scenes/scenes.fxml"/>
+
     </children>
 </VBox>
 
