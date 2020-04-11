@@ -38,8 +38,8 @@
             <Tab fx:id="verbsEditorTab" text="Verbs" disable="false" closable="false">
                 <fx:include fx:id="verbsEditor" source="../verbs/verbs.fxml"/>
             </Tab>
-            <Tab fx:id="propsEditorTab" text="Props" disable="true" closable="false">
-
+            <Tab fx:id="propsEditorTab" text="Props" disable="false" closable="false">
+                <fx:include fx:id="propsEditor" source="../props/props.fxml"/>
             </Tab>
         </TabPane>
     </children>

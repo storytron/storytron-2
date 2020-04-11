@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="props.PropsController"
+            prefHeight="488.0" prefWidth="600.0">
+    <top>
+        <ToolBar>
+            <items>
+                <Button text="+ Prop" disable="true"/>
+                <Button text="- Prop" disable="true"/>
+            </items>
+        </ToolBar>
+    </top>
+    <left>
+        <ListView fx:id="propList" prefWidth="150.0"/>
+    </left>
+    <center/>
+</BorderPane>
