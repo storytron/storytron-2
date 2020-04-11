@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="stages.StagesController"
+            prefHeight="488.0" prefWidth="600.0">
+    <top>
+        <ToolBar>
+            <items>
+                <Button text="+ Stage" disable="true"/>
+                <Button text="- Stage" disable="true"/>
+            </items>
+        </ToolBar>
+    </top>
+    <left>
+        <ListView fx:id="stageList" prefWidth="150.0"/>
+    </left>
+    <center>
+        <HBox spacing="2">
+            <children>
+                <Button disable="true">
+                    <graphic>
+                        <ImageView fx:id="stageIcon" fitHeight="45.0" fitWidth="45.0"/>
+                    </graphic>
+                </Button>
+                <VBox spacing="2">
+                    <TextField fx:id="stageTitle" text="Stage 1" promptText="Stage Name (required)" prefWidth="375.0" minWidth="375.0" />
+                    <TextField fx:id="stageDescription" promptText="Stage Description (optional)" minWidth="550.0"/>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+            </padding>
+        </HBox>
+    </center>
+</BorderPane>
