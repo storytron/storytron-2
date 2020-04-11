@@ -16,7 +16,10 @@
         </ToolBar>
     </top>
     <left>
-        <ListView fx:id="actorList" prefWidth="150.0"/>
+        <VBox>
+            <ListView fx:id="personalityList" prefWidth="150.0" prefHeight="55.0"/>
+            <ListView fx:id="actorList" prefWidth="150.0"/>
+        </VBox>
     </left>
     <center/>
 </BorderPane>

@@ -30,5 +30,7 @@ public class StagesController implements Initializable {
 
         stageIcon.setImage(image);
         stageList.setItems(stageListItems);
+
+        stageList.getSelectionModel().select(0);
     }
 }

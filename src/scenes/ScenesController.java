@@ -33,5 +33,7 @@ public class ScenesController implements Initializable {
 
         sceneIcon.setImage(image);
         sceneList.setItems(sceneListItems);
+
+        sceneList.getSelectionModel().select(0);
     }
 }
