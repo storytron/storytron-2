@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="actors.ActorsController"
+            prefHeight="488.0" prefWidth="600.0">
+    <top>
+        <ToolBar>
+            <items>
+                <Button text="+ Actor" disable="true"/>
+                <Button text="- Actor" disable="true"/>
+            </items>
+        </ToolBar>
+    </top>
+    <left>
+        <ListView fx:id="actorList" prefWidth="150.0"/>
+    </left>
+    <center/>
+</BorderPane>
