@@ -3,15 +3,21 @@ package main;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Tab;
 
-import javax.swing.*;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 
-public class MainController {
+public class MainController{
 
     @FXML
-    protected void displayAboutDialog(ActionEvent event) {
+    protected void displayAboutDialog(ActionEvent event)
+    {
        //System.out.println("About menu clicked");
         Alert about = new Alert(Alert.AlertType.INFORMATION);
         about.setTitle("Storytron 2");

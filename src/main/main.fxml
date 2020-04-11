@@ -2,11 +2,10 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuItem?>
-
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.Tab?>
-
 <?import javafx.scene.control.SeparatorMenuItem?>
+
 <VBox fx:controller="main.MainController" xmlns:fx="http://javafx.com/fxml">
     <children>
         <MenuBar>
@@ -27,15 +26,16 @@
             </menus>
         </MenuBar>
         <TabPane fx:id="editorTabPane">
-            <Tab fx:id="stagesEditor" text="Stages" disable="true" closable="false"/>
-            <Tab fx:id="scenesEditor" text="Scenes" disable="false" closable="false"/>
-            <Tab fx:id="actorsEditor" text="Actors" disable="true" closable="false"/>
-            <Tab fx:id="verbsEditor" text="Verbs" disable="true" closable="false"/>
-            <Tab fx:id="propsEditor" text="Props" disable="true" closable="false"/>
+            <Tab fx:id="stagesEditorTab" text="Stages" disable="false" closable="false">
+                <fx:include fx:id="stagesEditor" source="../stages/stages.fxml"/>
+            </Tab>
+            <Tab fx:id="scenesEditorTab" text="Scenes" disable="false" closable="false">
+                <fx:include fx:id="scenesEditor" source="../scenes/scenes.fxml"/>
+            </Tab>
+            <Tab fx:id="actorsEditorTab" text="Actors" disable="false" closable="false"/>
+            <Tab fx:id="verbsEditorTab" text="Verbs" disable="true" closable="false"/>
+            <Tab fx:id="propsEditorTab" text="Props" disable="true" closable="false"/>
         </TabPane>
-
-        <fx:include fx:id="scenes" source="../scenes/scenes.fxml"/>
-
     </children>
 </VBox>
 
