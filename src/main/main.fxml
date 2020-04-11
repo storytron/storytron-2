@@ -35,8 +35,12 @@
             <Tab fx:id="actorsEditorTab" text="Actors" disable="false" closable="false">
                 <fx:include fx:id="actorsEditor" source="../actors/actors.fxml"/>
             </Tab>
-            <Tab fx:id="verbsEditorTab" text="Verbs" disable="true" closable="false"/>
-            <Tab fx:id="propsEditorTab" text="Props" disable="true" closable="false"/>
+            <Tab fx:id="verbsEditorTab" text="Verbs" disable="false" closable="false">
+                <fx:include fx:id="verbsEditor" source="../verbs/verbs.fxml"/>
+            </Tab>
+            <Tab fx:id="propsEditorTab" text="Props" disable="true" closable="false">
+
+            </Tab>
         </TabPane>
     </children>
 </VBox>
