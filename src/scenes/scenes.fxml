@@ -18,6 +18,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Separator?>
 
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.control.ListCell?>
+<?import javafx.geometry.Insets?>
+<?import javafx.collections.FXCollections?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="scenes.ScenesController"
@@ -34,17 +38,30 @@
         <ListView fx:id="sceneList" prefWidth="150.0"/>
     </left>
     <center>
-        <ListView>
-            <VBox>
-                <HBox>
-                    <ImageView fx:id="sceneIcon" fitHeight="65.0" fitWidth="65.0" />
-                    <VBox>
-                        <TextField fx:id="sceneTitle" text="Scene 1" prefWidth="375.0" minWidth="375.0"/>
-                        <TextField fx:id="sceneDescription" promptText="Scene Description (optional)" minWidth="550.0"/>
-                    </VBox>
-                </HBox>
-                <ComboBox/>
-            </VBox>
-        </ListView>
+        <HBox spacing="2">
+            <children>
+                <Button disable="true">
+                    <graphic>
+                        <ImageView fx:id="sceneIcon" fitHeight="45.0" fitWidth="45.0"/>
+                    </graphic>
+                </Button>
+                <VBox spacing="2">
+                    <TextField fx:id="sceneTitle" text="Scene 1" promptText="Scene Name (required)" prefWidth="375.0" minWidth="375.0" />
+                    <TextField fx:id="sceneDescription" promptText="Scene Description (optional)" minWidth="550.0"/>
+                    <ComboBox fx:id="sceneStage" prefWidth="150" promptText="Select Stage">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="Stage 1"/>
+                                <String fx:value="Stage 2"/>
+                                <String fx:value="Stage 3"/>
+                            </FXCollections>
+                        </items>
+                    </ComboBox>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+            </padding>
+        </HBox>
     </center>
 </BorderPane>
