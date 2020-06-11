@@ -1,2 +1,2 @@
-# storytron-2
+# storytron-2-java
 TBD
